@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>iloom</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="backview"></div>
+
+    <header class="clear">
+      <div class="gnb-div">
+        <nav class="gnb-item">
+          <ul class="main-menu">
+            <li style="color: rgb(51, 51, 51)">
+              <a href="#" class="popup-icon-menu">
+                <img src="img/header/icon_menu_30px.svg" alt="popup-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">침실</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">침대</a></li>
+                <li><a href="#">매트리스</a></li>
+                <li><a href="#">옷장</a></li>
+                <li><a href="#">수납장</a></li>
+                <li><a href="#">화장대</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">거실</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">테이블</a></li>
+                <li><a href="#">거실장</a></li>
+                <li><a href="#">소파</a></li>
+                <li><a href="#">수납장</a></li>
+                <li><a href="#">액세서리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">주방</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">식탁</a></li>
+                <li><a href="#">수납장</a></li>
+                <li><a href="#">의자</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">키즈룸</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">침대</a></li>
+                <li><a href="#">책상</a></li>
+                <li><a href="#">수납장</a></li>
+                <li><a href="#">소파/의자</a></li>
+                <li><a href="#">액세서리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">학생방</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">책상</a></li>
+                <li><a href="#">책장</a></li>
+                <li><a href="#">수납장</a></li>
+                <li><a href="#">의자</a></li>
+                <li><a href="#">침대</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">서재</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">책상</a></li>
+                <li><a href="#">책장</a></li>
+                <li><a href="#">서랍장</a></li>
+                <li><a href="#">의자</a></li>
+                <li><a href="#">수납장</a></li>
+              </ul>
+            </li>
+            <li class="bar" style="margin-right: 10px">&centerdot;</li>
+            <li>
+              <a href="#">펫</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">가구</a></li>
+              </ul>
+            </li>
+            <li class="bar" style="margin-right: 10px">&centerdot;</li>
+            <li>
+              <a href="#">시리즈</a>
+              <div style="height: 8px"></div>
+            </li>
+            <li class="bar" style="margin-right: 10px">&centerdot;</li>
+            <li>
+              <a href="#">아울렛</a>
+              <div style="height: 8px"></div>
+              <ul class="sub-menu">
+                <li><a href="#">침실</a></li>
+                <li><a href="#">거실</a></li>
+                <li><a href="#">주방</a></li>
+                <li><a href="#">키즈룸</a></li>
+                <li><a href="#">학생방</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="gnb-item-logo">
+          <a href="#"><img src="img/header/gnb_logo.png" alt="gnb-logo" /></a>
+        </div>
+        <div class="gnb-item">
+          <ul>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">주문/배송</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">매장안내</a></li>
+          </ul>
+          <div class="gnb-search-and-cart">
+            <img src="img/header/icon_search_30px.svg" alt="icon-search" />
+            <a href="#"
+              ><img src="img/header/icon_cart_30px.svg" alt="icon-cart"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup">
+      <span class="popup-close"></span>
+      <div class="top-line"></div>
+      <div class="menu-line" style="height: 762px; left: 123px"></div>
+      <div class="menu-line" style="height: 762px; left: 246px"></div>
+      <div class="menu-line" style="height: 762px; left: 369px"></div>
+      <div class="menu-line" style="height: 762px; left: 492px"></div>
+      <div class="menu-line" style="height: 762px; left: 615px"></div>
+      <div class="menu-line" style="height: 762px; left: 738px"></div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">침실</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">침대</div>
+          <ul>
+            <li>모션베드</li>
+            <li>일반침대</li>
+            <li>패밀리침대</li>
+            <li>매트리스</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">매트리스</div>
+          <ul>
+            <li>매트리스</li>
+            <li>커버 / 프로텍터</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">옷장</div>
+          <ul>
+            <li>옷장/붙박이장</li>
+            <li>드레스룸</li>
+            <li>수납가구/ACC</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">수납장</div>
+          <ul>
+            <li>협탁</li>
+            <li>서랍장</li>
+            <li>파티션수납장</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">화장대</div>
+          <ul>
+            <li>화장대</li>
+            <li>스툴</li>
+            <li>거울/액세서리</li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">거실</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">테이블</div>
+          <ul>
+            <li>소파 테이블</li>
+            <li>패밀리 테이블</li>
+            <li>멀티테이블</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">거실장</div>
+          <ul>
+            <li>거실장</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">소파</div>
+          <ul>
+            <li>일자형</li>
+            <li>카우치/코너</li>
+            <li>1인/소파베드</li>
+            <li>리클라이너</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">수납장</div>
+          <ul>
+            <li>책장</li>
+            <li>장식장</li>
+            <li>서랍장</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">액세서리</div>
+          <ul></ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">주방</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">식탁</div>
+          <ul>
+            <li>식탁</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">수납장</div>
+          <ul>
+            <li>수납장</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">의자</div>
+          <ul></ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">키즈룸</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">침대</div>
+          <ul>
+            <li>침대</li>
+            <li>매트리스</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">책상</div>
+          <ul>
+            <li>책상</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">수납장</div>
+          <ul>
+            <li>서랍/수납장</li>
+            <li>책장</li>
+            <li>옷장/행거</li>
+            <li>놀이장</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">소파/의자</div>
+          <ul>
+            <li>소파</li>
+            <li>의자</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">액세서리</div>
+          <ul></ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">학생방</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">책상</div>
+          <ul>
+            <li>일반형</li>
+            <li>기능형</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">책장</div>
+          <ul>
+            <li>책장</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">수납장</div>
+          <ul>
+            <li>서랍장</li>
+            <li>옷장</li>
+            <li>수납가구/ACC</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">의자</div>
+          <ul>
+            <li>의자</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">침대</div>
+          <ul>
+            <li>일반침대</li>
+            <li>수납침대</li>
+            <li>모션침대</li>
+            <li>매트리스</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">서재</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">책상</div>
+          <ul>
+            <li>일반형</li>
+            <li>모션형</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">책장</div>
+          <ul>
+            <li>책장</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">서랍장</div>
+          <ul>
+            <li>책상서랍</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">의자</div>
+          <ul>
+            <li>태스크의자</li>
+            <li>프리미엄의자</li>
+            <li>보조의자</li>
+          </ul>
+          <hr />
+          <div class="popup-menu-body-subtitle">수납장</div>
+          <ul>
+            <li>장식장</li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu" style="height: 862px">
+        <div class="popup-menu-title">펫</div>
+        <div class="popup-menu-body">
+          <div class="popup-menu-body-subtitle">가구</div>
+          <ul>
+            <li>가구</li>
+            <li>액세서리</li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="popup-menu-right" style="height: 862px">
+        <div class="popup-menu-right-title">
+          <a href="#">시리즈</a>
+        </div>
+        <div class="popup-menu-right-title">
+          <a href="#">아울렛</a>
+        </div>
+        <div class="popup-menu-right-title">
+          <a href="#">부품구매</a>
+        </div>
+        <div class="popup-menu-body">
+          <ul class="popup-menu-body-right-ul">
+            <li><a href="#">VR쇼룸</a></li>
+            <li><a href="#">공간제안 서비스</a></li>
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">전시품 판매</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">라이프 스타일</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <aside class="asd-flting-box">
+      <article class="chtbot-box">
+        <h3 class="blind">chtbot-box</h3>
+        <a href="#" class="chtbotbtn mgb">챗봇</a>
+        <a href="#" class="chtbotbtn">리뷰</a>
+      </article>
+      <div class="recent-prdct-bx">
+        <hr class="firsthr" />
+        <div class="onoffbtn">
+          <img src="img/header/history_widget_up.jpg" alt="history" />
+        </div>
+        <div class="rcnt-hstr-cnt-bx">
+          <a href="#"><span>최근본상품( 0 )</span></a>
+        </div>
+        <hr class="secondhr" />
+      </div>
+    </aside>
+
+    <main id="main-banner-section" class="section clearfix">
+      <div class="main-slide-wrap">
+        <ul class="main-slide">
+          <li><img src="img/main/slide1.jpg" alt="slide1" /></li>
+          <li><img src="img/main/slide2.jpg" alt="slide2" /></li>
+          <li><img src="img/main/slide3.jpg" alt="slide3" /></li>
+          <li><img src="img/main/slide4.jpg" alt="slide4" /></li>
+          <li><img src="img/main/slide5.jpg" alt="slide5" /></li>
+          <li><img src="img/main/slide6.jpg" alt="slide6" /></li>
+        </ul>
+      </div>
+      <div class="main-prev clearfix">
+        <a href="#"><img src="img/main/slide_l_prev.png" alt="main-prev" /></a>
+      </div>
+      <div class="main-next clearfix">
+        <a href="#"><img src="img/main/slide_r_next.png" alt="main-next" /></a>
+      </div>
+    </main>
+
+    <section class="clear">
+      <h2 class="blind">section</h2>
+      <article class="main-recommend-section">
+        <h3 class="aq-ttl">고객님을 위한 제품 추천</h3>
+        <div class="aq-product-div">
+          <a href="#">
+            <figure class="aq-lst">
+              <img src="img/section1/section1-01.jpg" alt="sec1-01" />
+              <figcaption>
+                <span class="fgr-ttl">[일룸] 링키플러스 가방걸이</span>
+                <span class="fgr-prc">3,000</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="aq-lst">
+              <img src="img/section1/section1-02.jpg" alt="sec1-02" />
+              <figcaption>
+                <span class="fgr-ttl">[일룸] 쿠시노 침대가드 500폭</span>
+                <span class="fgr-prc">117,000</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="aq-lst">
+              <img src="img/section1/section1-03.jpg" alt="sec1-03" />
+              <figcaption>
+                <span class="fgr-ttl"
+                  >[일룸] 팅클팝/캐빈 800폭 피넛형 좌식책상</span
+                >
+                <span class="fgr-prc">99,000</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="aq-lst">
+              <img src="img/section1/section1-04.jpg" alt="sec1-04" />
+              <figcaption>
+                <span class="fgr-ttl">[일룸] (일룸)공통 북엔드(2ea)</span>
+                <span class="fgr-prc">4,000</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="aq-lst">
+              <img src="img/section1/section1-05.jpg" alt="sec1-05" />
+              <figcaption>
+                <span class="fgr-ttl">[일룸] 쿠시노 침대가드 1500폭</span>
+                <span class="fgr-prc">238,000</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="aq-lst">
+              <img src="img/section1/section1-06.jpg" alt="sec1-06" />
+              <figcaption>
+                <span class="fgr-ttl">[일룸] 보노 S03(SS,1100폭)_HARD</span>
+                <span class="fgr-prc">295,000</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+
+      <article id="main-card-section" class="section">
+        <h3 class="blind">main-card</h3>
+        <div class="main-card-list">
+          <a href="#" class="mgB25px" style="display: inline-block">
+            <img
+              src="img/section2/bannerPc.png"
+              alt="banner"
+              class="main-card-banner"
+            />
+          </a>
+        </div>
+        <ul class="main-card-list1">
+          <li class="main-card1">
+            <img
+              src="img/section2/sec2-01.jpg"
+              alt="sec2-01"
+              class="scale-animation-img"
+            />
+          </li>
+          <li class="main-card1">
+            <img
+              src="img/section2/sec2-02.jpg"
+              alt="sec2-02"
+              class="scale-animation-img"
+            />
+          </li>
+          <li class="main-card1">
+            <img
+              src="img/section2/sec2-03.jpg"
+              alt="sec2-03"
+              class="scale-animation-img"
+            />
+          </li>
+        </ul>
+      </article>
+
+      <article class="review-page section main-review">
+        <h3 class="blind">review-page</h3>
+        <div class="content-box bstRv">
+          <article class="banner-box">
+            <h3 class="blind">banner-box</h3>
+            <span class="banner-logo"></span>
+            <span class="banner-txt"
+              >일룸으로 달라진 특별한 생활을 만나보세요</span
+            >
+            <a href="#" class="banner-btn">더보기</a>
+          </article>
+          <article class="best-review-box">
+            <h3 class="blind">best-review-box</h3>
+            <div class="slid-box">
+              <ul class="slid-lst">
+                <li class="slid">
+                  <figure class="nw-review-box _lst inimgs">
+                    <span class="opn-pop-review img">
+                      <img
+                        src="img/section3/section3-01.jpg"
+                        alt="sec3-01"
+                        class="review-photo wpht"
+                      />
+                    </span>
+                    <figcaption class="rvw-inf">
+                      <article class="star-grd-box">
+                        <h3 class="blind">star-grd-box</h3>
+                        <span class="star grd1">별점1</span>
+                        <span class="star grd2">별점2</span>
+                        <span class="star grd3">별점3</span>
+                        <span class="star grd4">별점4</span>
+                        <span class="star grd5">별점5</span>
+                      </article>
+                      <dl class="df-dl">
+                        <dt class="template-review-title">현지님의 일룸생활</dt>
+                        <dd>
+                          <span class="inf-txt1 template-review-content">
+                            이사하면서 티비없는 거실을 만들고 싶었어요. 아이와
+                            함께하는 시간을 많이 가지고싶어서 딸아이를 위한
+                            공간으로 꾸몄지요-😀 그리하여 일룸 리딩하우스와
+                            슬라이딩 책장을 들였어요. 1년 가까이 사용하면서 가장
+                            잘 산 가구라고 생각합니다. 예쁜건 두 말하면 잔소리!
+                            터치등과 폭신하고 튼튼한 쇼파가 기능적으로도
+                            만족스럽습니다. 책장 슬라이딩도 부드럽고 안전합니다.
+                            이제는 아이가 스스로 책을 꺼내 읽습니다. 매일 자기
+                            전 책읽는 습관을 어렵지않게 들였어요. 우리집 거실
+                            분위기 대장 리딩하우스! 아이의 책 읽는 습관까지 두
+                            마리 토끼를 다 잡았네요.
+                          </span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                  <figure class="review-product">
+                    <span class="img">
+                      <img
+                        src="img/section3/section3-01-1.jpg"
+                        alt="sec3-01-1"
+                        class="photo template-product-photo"
+                      />
+                    </span>
+                    <figcaption>
+                      <dl class="df-dl">
+                        <dt>
+                          <span class="ttl template-product-title"
+                            >소파형 리딩하우스</span
+                          >
+                          <span class="like-hrt template-product-like-number"
+                            >104</span
+                          >
+                        </dt>
+                        <dd>
+                          <span class="inf-txt template-product-category"
+                            >키즈룸</span
+                          >
+                          <span class="num-txt">549,000</span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="slid">
+                  <figure class="nw-review-box _lst inimgs">
+                    <span class="opn-pop-review img">
+                      <img
+                        src="img/section3/section3-02.jpg"
+                        alt="sec3-02"
+                        class="review-photo hpht"
+                      />
+                    </span>
+                    <figcaption class="rvw-inf">
+                      <article class="star-grd-box">
+                        <h3 class="blind">star-grd-box</h3>
+                        <span class="star grd1">별점1</span>
+                        <span class="star grd2">별점2</span>
+                        <span class="star grd3">별점3</span>
+                        <span class="star grd4">별점4</span>
+                        <span class="star grd5">별점5</span>
+                      </article>
+                      <dl class="df-dl">
+                        <dt class="template-review-title">
+                          눕는 사람도 공간도 포근하게 만드는 플롭
+                        </dt>
+                        <dd>
+                          <span class="inf-txt1 template-review-content">
+                            처음에 이 집 이사왔을 때 어두운 색상의 가죽 소파를
+                            샀었는데 처음에는 고급스럽다 생각했지만, 결국엔
+                            공간이 칙칙해지더라구요. 공간 분위기를 바꾸고 싶어서
+                            찾아 헤매다 발견하게 된 플롭 소파! 공간이 화사해진
+                            것은 물론이고, 너무 포근하고 푹신해서 주말에는
+                            누워서 일어날 수가 없어요. 다른 브랜드에도 비슷한 것
+                            많지만 역시 일룸 퀄리티는 따라갈 수가 없네요.
+                          </span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                  <figure class="review-product">
+                    <span class="img">
+                      <img
+                        src="img/section3/section3-02-1.jpg"
+                        alt="sec3-02-1"
+                        class="photo template-product-photo"
+                      />
+                    </span>
+                    <figcaption>
+                      <dl class="df-dl">
+                        <dt>
+                          <span class="ttl template-product-title"
+                            >플롭 4인 아쿠아클린 패브릭 모듈 소파</span
+                          >
+                          <span class="like-hrt template-product-like-number"
+                            >4</span
+                          >
+                        </dt>
+                        <dd>
+                          <span class="inf-txt template-product-category"
+                            >거실</span
+                          >
+                          <span class="num-txt">3,290,000</span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="slid">
+                  <figure class="nw-review-box _lst inimgs">
+                    <span class="opn-pop-review img">
+                      <img
+                        src="img/section3/section3-03.jpg"
+                        alt="sec3-03"
+                        class="review-photo hpht"
+                      />
+                    </span>
+                    <figcaption class="rvw-inf">
+                      <article class="star-grd-box">
+                        <h3 class="blind">star-grd-box</h3>
+                        <span class="star grd1">별점1</span>
+                        <span class="star grd2">별점2</span>
+                        <span class="star grd3">별점3</span>
+                        <span class="star grd4">별점4</span>
+                        <span class="star grd5">별점5</span>
+                      </article>
+                      <dl class="df-dl">
+                        <dt class="template-review-title">
+                          7.5kg 고양이도 눕는 캣타워
+                        </dt>
+                        <dd>
+                          <span class="inf-txt1 template-review-content">
+                            안흔들리는 캣타워가 필요해서 일룸 캣타워를
+                            선택했는데 후회없습니다! 제일 윗칸은 7.5kg 고양이가
+                            방석깔고 들어가서 앉기엔 너무 좁아서 방석빼고
+                            담요깔아주니까 잘 누워있고 바로 아래 타원형 방석엔
+                            한번씩 누워자요 다들 참고하십쇼!
+                          </span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                  <figure class="review-product">
+                    <span class="img">
+                      <img
+                        src="img/section3/section3-03-1.jpg"
+                        alt="sec3-03-1"
+                        class="photo template-product-photo"
+                      />
+                    </span>
+                    <figcaption>
+                      <dl class="df-dl">
+                        <dt>
+                          <span class="ttl template-product-title"
+                            >커스텀 캣타워 (L)_콘도형(온라인몰 전용)</span
+                          >
+                          <span class="like-hrt template-product-like-number"
+                            >9</span
+                          >
+                        </dt>
+                        <dd>
+                          <span class="inf-txt template-product-category"
+                            >펫</span
+                          >
+                          <span class="num-txt">649,000</span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="slid">
+                  <figure class="nw-review-box _lst inimgs">
+                    <span class="opn-pop-review img">
+                      <img
+                        src="img/section3/section3-04.jpg"
+                        alt="sec3-04"
+                        class="review-photo hpht"
+                      />
+                    </span>
+                    <figcaption class="rvw-inf">
+                      <article class="star-grd-box">
+                        <h3 class="blind">star-grd-box</h3>
+                        <span class="star grd1">별점1</span>
+                        <span class="star grd2">별점2</span>
+                        <span class="star grd3">별점3</span>
+                        <span class="star grd4">별점4</span>
+                        <span class="star grd5">별점5</span>
+                      </article>
+                      <dl class="df-dl">
+                        <dt class="template-review-title">
+                          손금전님의 일룸생활
+                        </dt>
+                        <dd>
+                          <span class="inf-txt1 template-review-content">
+                            일룸로이 구입했어요 색감도 너무 화사하고 의자도
+                            자세를 딱 잡아주니 오랜고민끝에 탁월한
+                            선택인것같아요 6단을 할까 고민하긴했지만 너무
+                            답답해보일것같아 5단으로 했는데 적당히 여유있고
+                            맘에들어요 아이들도 공부한다며 책상에 앉아있는모습이
+                            흐믓하네요
+                          </span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                  <figure class="review-product">
+                    <span class="img">
+                      <img
+                        src="img/section3/section3-04-1.jpg"
+                        alt="sec3-04-1"
+                        class="photo template-product-photo"
+                      />
+                    </span>
+                    <figcaption>
+                      <dl class="df-dl">
+                        <dt>
+                          <span class="ttl template-product-title"
+                            >5단 다리형 책상 세트 1400폭</span
+                          >
+                          <span class="like-hrt template-product-like-number"
+                            >247</span
+                          >
+                        </dt>
+                        <dd>
+                          <span class="inf-txt template-product-category"
+                            >학생방</span
+                          >
+                          <span class="num-txt">729,000</span>
+                        </dd>
+                      </dl>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </article>
+
+      <article id="main-instagram-section" class="section">
+        <h3 class="blind">main-instagram</h3>
+        <div class="title1">
+          <img src="img/section4/instagram_1.svg" alt="instagram1" />
+          <br />
+          <img src="img/section4/instagram_2.svg" alt="instagram2" />
+        </div>
+        <ul class="main-card-list">
+          <li class="main-card">
+            <a href="#"
+              ><img src="img/section4/section4-01.jpg" alt="sec4-01"
+            /></a>
+          </li>
+          <li class="main-card">
+            <a href="#"
+              ><img src="img/section4/section4-02.jpg" alt="sec4-02"
+            /></a>
+          </li>
+          <li class="main-card">
+            <a href="#"
+              ><img src="img/section4/section4-03.jpg" alt="sec4-03"
+            /></a>
+          </li>
+          <li class="main-card">
+            <a href="#"
+              ><img src="img/section4/section4-04.jpg" alt="sec4-04"
+            /></a>
+          </li>
+          <li class="main-card">
+            <a href="#"
+              ><img src="img/section4/section4-05.jpg" alt="sec4-05"
+            /></a>
+          </li>
+        </ul>
+      </article>
+
+      <article id="main-quickmenu-section" class="section">
+        <h3 class="blind">main-quickmenu</h3>
+        <div class="title2">
+          <img src="img/section5/img_quickmenu.svg" alt="quickmenu" />
+        </div>
+        <ul class="main-card-list2 quick-menu">
+          <li class="main-card2 consulting">
+            <div class="card-img">
+              <span class="quickmenu-img1"></span>
+            </div>
+            <p class="link-ios-text" style="cursor: pointer">
+              <span class="f15 arial">Consulting</span>
+              <br />
+              <span class="f17 noto">공간제안 서비스</span>
+            </p>
+          </li>
+          <li class="main-card2 store">
+            <div class="card-img">
+              <span class="quickmenu-img2"></span>
+            </div>
+            <p class="link-ios-text" style="cursor: pointer">
+              <span class="f15 arial">Store</span>
+              <br />
+              <span class="f17 noto">매장안내</span>
+            </p>
+          </li>
+          <li class="main-card2 refurb">
+            <div class="card-img">
+              <span class="quickmenu-img3"></span>
+            </div>
+            <p class="link-ios-text" style="cursor: pointer">
+              <span class="f15 arial">Refurb</span>
+              <br />
+              <span class="f17 noto">전시품 판매</span>
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <article id="main-notice-section">
+        <h3 class="blind">main-notice</h3>
+        <div class="title3">
+          <img src="img/section6/img_notice.svg" alt="notice" />
+        </div>
+        <ul class="main-notice-list">
+          <li>
+            <a href="#" class="ntc-ttl ellipsis"
+              >일룸 공식몰 시스템 점검 일정 안내 (11월 1일 00시~09시 30분)</a
+            >
+            <span class="ntc-dt">2022.10.31</span>
+          </li>
+          <li>
+            <a href="#" class="ntc-ttl ellipsis"
+              >2022년 12월 무이자 할부 안내</a
+            >
+            <span class="ntc-dt">2022.11.30</span>
+          </li>
+          <li>
+            <a href="#" class="ntc-ttl ellipsis"
+              >2022년 11월 무이자 할부 안내</a
+            >
+            <span class="ntc-dt">2022.10.31</span>
+          </li>
+          <li>
+            <a href="#" class="ntc-ttl ellipsis"
+              >2022년 10월 무이자 할부 안내</a
+            >
+            <span class="ntc-dt">2022.09.30</span>
+          </li>
+        </ul>
+        <input
+          type="button"
+          value="더 보기"
+          class="more-button noto f16"
+          id="more-order-button"
+          style="display: inline-block"
+        />
+      </article>
+    </section>
+
+    <footer style="display: inline-block">
+      <ul id="footer-inner">
+        <li>
+          <ul class="footer-inner-box">
+            <li class="footer-inner-item">
+              <a href="#"
+                ><img src="img/footer/footer_logo.png" alt="footer-logo"
+              /></a>
+            </li>
+            <li class="footer-inner-item">
+              <ul>
+                <li class="item-title noto">ABOUT</li>
+                <li class="f12"><a href="#" class="noto">회사소개</a></li>
+                <li class="f12"><a href="#" class="noto">매장안내</a></li>
+                <li class="f12"><a href="#" class="noto">인재채용</a></li>
+              </ul>
+            </li>
+            <li class="footer-inner-item">
+              <ul>
+                <li class="item-title noto">SUPPORT</li>
+                <li class="f12"><a href="#" class="noto">고객지원</a></li>
+                <li class="f12"><a href="#" class="noto">서비스센터</a></li>
+                <li class="f12">
+                  <a href="#" class="noto">대리점 개설안내</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-inner-item">
+              <ul>
+                <li class="item-title noto">INFO</li>
+                <li class="f12"><a href="#" class="noto">이용약관</a></li>
+                <li class="f12">
+                  <b><a href="#" class="noto">개인정보 처리방침</a></b>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-inner-item">
+              <ul>
+                <li>
+                  <dl>
+                    <dt class="noto item-title lnhght30">빠른 상담문의</dt>
+                    <dd class="noto f13 btnlst">
+                      <a href="#" class="btn icn-kakao-black-after">챗봇상담</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="noto item-title lnhght36">
+                      서비스 문의 및 신청
+                    </dt>
+                    <dd class="noto f13 btnlst">
+                      <a href="#" class="btn text">일룸 서비스센터 바로가기</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="noto item-title lnhght36">고객센터 전화문의</dt>
+                    <dd class="noto f13" style="margin-left: 0">
+                      <span class="fwbd f14">1577-5670</span>
+                      <span class="before-pd40 before-dtwkdy"
+                        >9:30 ~ 17:30 (점심시간 12:30 ~ 13:30)</span
+                      >
+                      <span class="before-pd40 before-dtstrdy"
+                        >9:30 ~ 12:30 (쇼핑몰 구매상담 제외)</span
+                      >
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li style="margin: 30px 0px">
+          <hr
+            style="
+              background-color: #e0e0e0;
+              border: 1px solid #e0e0e0;
+              border-bottom: none;
+            "
+          />
+        </li>
+        <li id="second-footer">
+          <ul class="footer-inner-box">
+            <li class="footer-inner-item">
+              <div style="margin-bottom: 10px">
+                <a href="#"
+                  ><img src="img/footer/footer_i.png" alt="instagram" /></a
+                >&nbsp;
+                <a href="#"
+                  ><img src="img/footer/footer_f.png" alt="facebook" /></a
+                >&nbsp;
+                <a href="#"><img src="img/footer/footer_b.png" alt="blog" /></a>
+              </div>
+            </li>
+            <li class="footer-inner-item" style="width: 890px">
+              <ul style="float: left">
+                <li class="f12 noto">
+                  서울시 송파구 오금로 311 (오금동45-1) (주)일룸 ·대표이사
+                  강성문
+                </li>
+                <li class="f12 noto">개인정보보호 책임자 : 강성문</li>
+                <li class="f12 noto">
+                  사업자등록번호 : 215-86-93600·통신판매업신고 :
+                  2009-서울송파-0069호·부가통신사업신고필증 : 021129
+                </li>
+                <li class="f12 noto">호스팅 서비스사업자 · (주)일룸</li>
+                <li class="f12 arial">
+                  webmaster@iloom.com·Copyright (c) 2018 iloom lnc. All rights
+                  reserved
+                </li>
+              </ul>
+              <ul class="mark-ul">
+                <li class="mark">
+                  <img src="img/footer/mark_1.png" alt="mark1" />
+                </li>
+                <li class="mark">
+                  <img src="img/footer/mark_2.png" alt="mark2" />
+                </li>
+                <li class="mark">
+                  <a href="#"
+                    ><img
+                      src="img/footer/spc_iloom.png"
+                      alt="spc-iloom"
+                      style="width: 45px; height: auto"
+                  /></a>
+                </li>
+                <li class="mark isms">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
